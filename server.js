@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/api/client/:id', (req, res) => {
     const { id } = req.params;
     const dadosJson  = JSON.parse(readFileSync(path.join(__dirname, 'data', 'UserSensitveData', 'UserSensitiveData.json'), 'utf-8'));
-    const client = dadosJson.find(user => user.usuario_id === id);
+    const client = [...dadosJson].find(user => user.usuario_id === id);
     if (client) {
         res.json(client);
     } else {
@@ -35,33 +35,70 @@ app.get('/api/client/:id', (req, res) => {
     }
 });
 
-app.get('/api/transacoes', (req, res) => {
+app.get('/api/client/:id/transacoes', (req, res) => {
+    const { id } = req.params;
     const getTransacoes = JSON.parse(readFileSync(path.join(__dirname, 'data', 'TransacoesData', 'TransacoesData.json'), 'utf-8'));
-    res.json(getTransacoes);
+    const transacao = getTransacoes.find(t => t.id === id);
+    if (transacao) {
+        res.json(transacao);
+    } else {
+        res.status(404).json({ message: 'Transaction not found' });
+    }
 });
 
-app.get('/api/investimentos', (req, res) => {
+app.get('/api/client/:id/investimentos', (req, res) => {
+    const { id } = req.params;  
+    
     const getInvestimentos = JSON.parse(readFileSync(path.join(__dirname, 'data', 'InvestimentosData', 'InvestimentosData.json'), 'utf-8'));
-    res.json(getInvestimentos);
+    const investimento = [getInvestimentos].find(i => i.id === id);
+    if (investimento) {
+        res.json(investimento);
+    } else {
+        res.status(404).json({ message: 'Investment not found' });
+    }
 });
 
-app.get("api/orcamento", (req, res) => {
+app.get('/api/client/:id/orcamento', (req, res) => {
+    const { id } = req.params;      
     const getOrcamento = JSON.parse(readFileSync(path.join(__dirname, 'data', 'OrcamentoData', 'OrcamentoData.json'), 'utf-8'));
-    res.json(getOrcamento);
+    const orcamento = getOrcamento.find(o => o.id === id);
+    if (orcamento) {
+        res.json(orcamento);
+    } else {
+        res.status(404).json({ message: 'Budget not found' });
+    }
 });
-app.get("/api/metas", (req, res) => {
+app.get('/api/client/:id/metas' , (req, res) => {
+    const { id } = req.params;
     const getMetas = JSON.parse(readFileSync(path.join(__dirname, 'data', 'MetasData', 'MetasData.json'), 'utf-8'));
-    res.json(getMetas);
+    const meta = getMetas.find(m => m.id === id);
+    if (meta) {
+        res.json(meta);
+    } else {
+        res.status(404).json({ message: 'Goal not found' });
+    }
 });
 
-app.get("/api/conta", (req, res) => {
+app.get('/api/client/:id/conta', (req, res) => {
+    const { id } = req.params;
     const getConta = JSON.parse(readFileSync(path.join(__dirname, 'data', 'ContaData', 'ContaData.json'), 'utf-8'));
-    res.json(getConta);
+    const conta = getConta.find(c => c.id === id);
+    if (conta) {
+        res.json(conta);
+    } else {
+        res.status(404).json({ message: 'Account not found' });
+    }
 });
 
-app.get("/api/cartao", (req, res) => {
+app.get('/api/client/:id/cartao', (req, res) => {
+    const { id } = req.params;
     const getCartao = JSON.parse(readFileSync(path.join(__dirname, 'data', 'CartaoData', 'CartaoData.json'), 'utf-8'));
-    res.json(getCartao);
+    const cartao = getCartao.find(c => c.id === id);
+    if (cartao) {
+        res.json(cartao);
+    } else {
+        res.status(404).json({ message: 'Card not found' });
+    }
 });
 
 app.get('/', (req, res) => {

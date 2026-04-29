@@ -23,7 +23,7 @@ class GetClient{
     }
     async getClientDataOrcamento() {
         try {
-            const response = await fetch(`http://localhost:3000/api/orcamento`);
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/orcamento`);
             const data = await response.json();
             return data;
         } catch (error) {
@@ -32,7 +32,7 @@ class GetClient{
     }
     async getClientDataMetas() {
         try {
-            const response = await fetch(`http://localhost:3000/api/metas`);
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/metas`);
             const data = await response.json();
             return data;
         } catch (error) {
@@ -41,7 +41,7 @@ class GetClient{
     }
     async getClientDataConta() {
         try {
-            const response = await fetch(`http://localhost:3000/api/conta`);
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/conta`);
             const data = await response.json();
             return data;
         } catch (error) {
@@ -50,51 +50,41 @@ class GetClient{
     }
     async getClientDataCartao() {
         try {
-            const response = await fetch(`http://localhost:3000/api/cartao`);
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/cartao`);
             const data = await response.json();
             return data;
         } catch (error) {
             console.error('Error fetching client data:', error);
         }
     }
-        async getClientDataTransacoes() {
+    async getClientDataTransacoes() {
         try {
-            const response = await fetch(`http://localhost:3000/api/transacoes`);
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/transacoes`);
             const data = await response.json();
             return data;
         } catch (error) {
             console.error('Error fetching client data:', error);
         }
     }
-        async getClientDataInvestimentos() {
+    async getClientDataInvestimentos() {
             try {
-                const response = await fetch(`http://localhost:3000/api/investimentos`);
+                const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/investimentos`);
                 const data = await response.json();
                 return data;
             } catch (error) {
                 console.error('Error fetching client data:', error);
             }
         }
+    async getClientNotifications() {
+        try {
+            const response = await fetch(`http://localhost:3000/api/client/${this.usuario_id}/notifications`);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Error fetching client notifications:', error);
+        }      
+    }
 
-        async getClientDataMetas() {
-            try {
-                const response = await fetch(`http://localhost:3000/api/metas`);
-                const data = await response.json();
-                return data;
-            } catch (error) {
-                console.error('Error fetching client data:', error);
-            }   
-        }
-
-        async getClientDataOrcamento() {    
-            try {
-                const response = await fetch(`http://localhost:3000/api/orcamento`);
-                const data = await response.json();
-                return data;
-            }   catch (error) {
-                console.error('Error fetching client data:', error);
-            }
-        }
     
     
 }
