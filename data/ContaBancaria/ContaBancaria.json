@@ -1,0 +1,32 @@
+{
+  "usuario_id": "001",
+  "contas": [
+    {
+      "id": "conta_001",
+      "banco": "Nubank",
+      "tipo": "conta_corrente",
+      "agencia": "0001",
+      "conta": "123456-7",
+      "saldo_atual": 4580.50,
+      "saldo_bloqueado": 0.00,
+      "limite_cheque_especial": 2000.00
+    },
+    {
+      "id": "conta_002",
+      "banco": "Inter",
+      "tipo": "conta_corrente",
+      "agencia": "0001",
+      "conta": "987654-3",
+      "saldo_atual": 12500.30,
+      "saldo_bloqueado": 0.00,
+      "limite_cheque_especial": 5000.00
+    },
+    {
+      "id": "conta_003",
+      "banco": "PicPay",
+      "tipo": "carteira_digital",
+      "saldo_atual": 350.20
+    }
+  ],
+  "saldo_total_contas": 17431.00
+}

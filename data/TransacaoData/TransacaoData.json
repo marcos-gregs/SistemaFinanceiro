@@ -1,0 +1,75 @@
+{
+  "usuario_id": "001",
+  "ano": 2026,
+  "mes": 4,
+  "transacoes": [
+    {
+      "id": "tx_001",
+      "data": "2026-04-01",
+      "tipo": "receita",
+      "categoria": "salario",
+      "descricao": "Salário - Empresa ABC",
+      "valor": 15000.00,
+      "forma_pagamento": "transferencia",
+      "conta_destino": "conta_corrente",
+      "status": "confirmada"
+    },
+    {
+      "id": "tx_002",
+      "data": "2026-04-02",
+      "tipo": "despesa",
+      "categoria": "alimentacao",
+      "subcategoria": "mercado",
+      "descricao": "Supermercado Extra",
+      "valor": 450.30,
+      "forma_pagamento": "credito",
+      "cartao_id": "cartao_1234",
+      "parcelas": 1,
+      "status": "confirmada"
+    },
+    {
+      "id": "tx_003",
+      "data": "2026-04-05",
+      "tipo": "despesa",
+      "categoria": "moradia",
+      "subcategoria": "aluguel",
+      "descricao": "Aluguel Abril",
+      "valor": 2500.00,
+      "forma_pagamento": "debito",
+      "status": "confirmada"
+    },
+    {
+      "id": "tx_004",
+      "data": "2026-04-10",
+      "tipo": "investimento",
+      "categoria": "renda_fixa",
+      "descricao": "Aporte CDB",
+      "valor": 1000.00,
+      "forma_pagamento": "transferencia",
+      "destino": "cdb_xp",
+      "status": "confirmada"
+    },
+    {
+      "id": "tx_005",
+      "data": "2026-04-15",
+      "tipo": "despesa",
+      "categoria": "lazer",
+      "descricao": "Cinema",
+      "valor": 65.00,
+      "forma_pagamento": "credito",
+      "cartao_id": "cartao_1234",
+      "status": "pendente"
+    }
+  ],
+  "resumo": {
+    "total_receitas": 15000.00,
+    "total_despesas": 3015.30,
+    "total_investimentos": 1000.00,
+    "saldo_mes": 10984.70,
+    "gasto_por_categoria": {
+      "alimentacao": 450.30,
+      "moradia": 2500.00,
+      "lazer": 65.00
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "usuario_id": "001",
+  "nome_completo": "João Silva",
+  "avatar_url": "/avatares/joao.jpg",
+  "telefone": "(11) 98765-4321",
+  "endereco": {
+    "logradouro": "Av. Paulista, 1000",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "01310-100"
+  },
+  "notificacoes": {
+    "email": true,
+    "push": false,
+    "sms": true
+  },
+  "tema": "escuro",
+  "idioma": "pt-BR"
+}

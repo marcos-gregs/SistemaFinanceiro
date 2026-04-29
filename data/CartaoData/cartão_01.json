@@ -1,0 +1,47 @@
+{
+  "usuario_id": "001",
+  "cartao_id": "cartao_1234",
+  "ultimos_quatro": "1234",
+  "tipo_cartao": "credito",
+  "bandeira": "Visa",
+  "limite": 8000.00,
+  "dia_fechamento": 15,
+  "dia_vencimento": 5,
+  "fatura_atual": {
+    "mes": "2026-04",
+    "total": 3250.75,
+    "data_vencimento": "2026-05-05",
+    "pagamento_minimo": 487.61,
+    "itens": [
+      { 
+        "data": "2026-04-10", 
+        "descricao": "Supermercado Extra", 
+        "categoria": "alimentacao",
+        "valor": 450.30,
+        "parcelas": 1
+      },
+      { 
+        "data": "2026-04-12", 
+        "descricao": "Uber", 
+        "categoria": "transporte",
+        "valor": 35.90,
+        "parcelas": 1
+      },
+      { 
+        "data": "2026-04-15", 
+        "descricao": "Netflix", 
+        "categoria": "lazer",
+        "valor": 55.90,
+        "parcelas": 1
+      }
+    ]
+  },
+  "historico_faturas": [
+    {
+      "mes": "2026-03",
+      "total": 2850.30,
+      "data_pagamento": "2026-04-02",
+      "status": "pago"
+    }
+  ]
+}

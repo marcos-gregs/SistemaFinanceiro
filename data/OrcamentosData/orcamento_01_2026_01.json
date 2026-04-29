@@ -1,0 +1,16 @@
+{
+  "usuario_id": "001",
+  "ano": 2026,
+  "mes": 1,
+  "total_receitas": 15000.00,
+  "total_despesas": 0,
+  "categorias": {
+    "moradia": { "orçado": 3000.00, "gasto": 0.00 },
+    "alimentacao": { "orçado": 1200.00, "gasto": 0.00 },
+    "transporte": { "orçado": 500.00, "gasto": 0.00 },
+    "lazer": { "orçado": 800.00, "gasto": 0.00 },
+    "investimentos": { "orçado": 5000.00, "gasto": 0.00 },
+    "saude": { "orçado": 400.00, "gasto": 0.00 },
+    "educacao": { "orçado": 600.00, "gasto": 0.00 }
+  }
+}

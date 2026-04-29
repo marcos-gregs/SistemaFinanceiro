@@ -1,0 +1,90 @@
+{
+  "usuario_id": "001",
+  "total_investido": 47000.00,
+  "total_atual": 52340.75,
+  "rentabilidade_total": 11.36,
+  "ultima_atualizacao": "2026-04-29T14:00:00Z",
+  "carteira": {
+    "renda_fixa": {
+      "cdb": { 
+        "nome": "CDB Banco XP", 
+        "aplicado": 15000.00, 
+        "valor_atual": 15250.50,
+        "vencimento": "2027-01-15",
+        "liquidez": "diaria"
+      },
+      "tesouro_direto": { 
+        "nome": "Tesouro Selic 2029", 
+        "aplicado": 10000.00, 
+        "valor_atual": 10200.25,
+        "vencimento": "2029-03-01",
+        "liquidez": "diaria"
+      },
+      "lci_lca": {
+        "nome": "LCI Banco Inter",
+        "aplicado": 8000.00,
+        "valor_atual": 8240.00,
+        "vencimento": "2026-12-10",
+        "liquidez": "no_vencimento"
+      }
+    },
+    "renda_variavel": {
+      "acoes": [
+        { 
+          "ticker": "PETR4", 
+          "empresa": "Petrobras",
+          "quantidade": 200, 
+          "preco_medio": 32.50, 
+          "preco_atual": 38.75,
+          "valor_investido": 6500.00,
+          "valor_atual": 7750.00
+        },
+        { 
+          "ticker": "VALE3", 
+          "empresa": "Vale",
+          "quantidade": 100, 
+          "preco_medio": 65.00, 
+          "preco_atual": 68.90,
+          "valor_investido": 6500.00,
+          "valor_atual": 6890.00
+        }
+      ],
+      "etfs": [
+        { 
+          "ticker": "IVVB11", 
+          "nome": "iShares S&P 500",
+          "quantidade": 50, 
+          "preco_medio": 280.00, 
+          "preco_atual": 295.30,
+          "valor_investido": 14000.00,
+          "valor_atual": 14765.00
+        }
+      ],
+      "fiis": [
+        {
+          "ticker": "HGLG11",
+          "nome": "CSHG Logística",
+          "quantidade": 30,
+          "preco_medio": 150.00,
+          "preco_atual": 165.40,
+          "valor_investido": 4500.00,
+          "valor_atual": 4962.00
+        }
+      ]
+    },
+    "renda_internacional": {
+      "acoes_usa": [
+        {
+          "ticker": "AAPL",
+          "empresa": "Apple Inc.",
+          "quantidade": 10,
+          "preco_medio": 175.50,
+          "preco_atual": 190.25,
+          "valor_investido": 1755.00,
+          "valor_atual": 1902.50,
+          "moeda": "USD"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "001",
+  "email": "joao@email.com",
+  "senha_hash": "$2a$10$xH9...",
+  "cpf": "123.456.789-00",
+  "data_criacao": "2026-01-01T10:00:00Z",
+  "ultimo_acesso": "2026-04-29T08:30:00Z",
+  "status": "ativo"
+}

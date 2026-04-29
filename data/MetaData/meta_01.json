@@ -1,0 +1,35 @@
+{
+  "usuario_id": "001",
+  "metas": [
+    {
+      "id": "meta_1",
+      "nome": "Comprar apartamento",
+      "valor_meta": 200000.00,
+      "valor_atual": 35000.00,
+      "prazo": "2028-12-31",
+      "prioridade": "alta",
+      "contribuicao_mensal": 2500.00,
+      "categoria": "imovel"
+    },
+    {
+      "id": "meta_2",
+      "nome": "Reserva de emergência",
+      "valor_meta": 45000.00,
+      "valor_atual": 12000.00,
+      "prazo": "2026-12-31",
+      "prioridade": "critica",
+      "contribuicao_mensal": 3000.00,
+      "categoria": "reserva"
+    },
+    {
+      "id": "meta_3",
+      "nome": "Trocar de carro",
+      "valor_meta": 80000.00,
+      "valor_atual": 15000.00,
+      "prazo": "2027-06-30",
+      "prioridade": "media",
+      "contribuicao_mensal": 1000.00,
+      "categoria": "veiculo"
+    }
+  ]
+}
